@@ -1,0 +1,59 @@
+body, html {
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+    height: 100%;
+/* Set margin and padding to zero */
+    margin: 0;
+    padding: 0;
+}
+
+.bgimg {
+/* Background image */
+    background: url(../img/Bg.jpg);
+/* Full-screen */
+    height: 100%;
+/* Center the background image */
+    background-position: center;
+/* Scale and zoom in the image */
+    background-size: cover;
+/* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+/* Add a white text color to all elements inside the .bgimg container */
+    color: #FFF;
+/* Add a font */
+    font-family: Prime;
+}
+
+/* Position text in middel */
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Set font-size for h1 element */
+h1 {
+    /* Set font-size for h1 element */
+    font-size: 40px;
+    /* Add spacing between letters */
+    letter-spacing: 30px;
+    /* Sets how thick or thin characters in text should be displayed */
+    font-weight: 100;
+}
+
+#demo {
+    /* Sets how thick or thin characters in text should be displayed */
+    font-weight: lighter;
+    /* Add spacing between words */
+    word-spacing: 20px;
+}
+
+hr {
+    /* Set margin to auto to align it center */
+    margin: auto;
+    /* Set the width */
+    width: 80%;
+    /* Add border around hr - "Width Type Color */
+    border: 1.5px solid #fff;
+}

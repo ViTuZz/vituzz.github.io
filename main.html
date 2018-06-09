@@ -5,12 +5,96 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Welcome !</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
-    <div class="wrapper"> </div>
-	
+
+    <div class="wrapper">
+			<header>
+				<nav>
+					<div class="menu-icon">
+						<i class="fa fa-bars fa-2x"></i>
+					</div>
+					<div class="logo">
+						ViTuZz
+					</div>
+					<div class="menu">
+						<ul>
+							<li><a href="#">Accueil</a></li>
+							<li><a href="#about">À propos</a></li>
+							<li><a href="#project">Projet</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<!-- About -->
+				<div class="content">
+				<h2 id=about>À propos de moi</h2>
+				<hr class="separator"><br>
+				<i class="fas fa-code"></i>
+					<p>
+						Je suis un développeur passioné ! Je passe la majeur partie de mon temps libre au développement. J'apprends de nouvelles choses de jours en jours, dans le but de m'améliorer et de vous proposer un contenu de qualité.
+					</p>
+				<i class="fas fa-coffee"></i>
+					<p>
+						Dans la vie, j'aime voyager, faire du sport, parler (beaucoup trop même <i class="fas fa-smile"></i> ), faire connaissance avec d'autres personnes, et pourquoi pas vous ? Vous pouvez rejoindre mon discord à l'adresse suivante: <b><u><a href="https://discord.gg/Qh2wFmv" target="_blank">https://discord.gg/Qh2wFmv</a></u></b>
+					</p>
+				<i class="fas fa-pencil-alt"></i>
+					<p>
+						Je suis quelqu'un d'assez créatif, dès que j'ai une idée qui me plait, j'essaye de la réaliser, et si je ne trouve pas ou que je bloque à un endroit, je vais me renseigner sur OpenClassRoom ou StackOverFlow par ex.
+					</p>
+			</div>
+		</div>
+		<!-- About -->
+
+		<!-- Project -->
+		<div class="content">
+			<h2 id="project"> Mes projets actuels </h2>
+			<hr class="separator"><br>
+			<p class="photo">
+				<b><u>Photos et screenshots en cours d'approvisionnement <i class="fas fa-smile"></i></u></b>
+			</p>
+
+		</div>
+		<!-- Project -->
+
+		<!-- Contact -->
+		<div class="content">
+			<h2 id="contact"> Nous contacter </h2>
+			<hr class="separator"><br>
+			<div class="contact">
+				<p>
+					<h3><bVoici les différents moyens de nous contacter:</h3><br> Sur discord à ViTuZz#2340 <br><br> Par mail à vituzzpro@gmail.com (Pas de spam S.V.P.) <br><br> Formulaire de contact <b>(Bientôt disponible !)</b>
+				</p>
+			</div>
+
+		</div>
+		<!-- Contact -->
+		<script type="text/javascript">
+		// Menu toggle-button
+
+		$(document).ready(function() {
+			$(".menu-icon").on("click", function() {
+				$("nav ul").toggleClass("showing");
+			});
+		});
+
+		// Scrolling effect
+
+		$(window).on("scroll", function() {
+			if($(window).scrollTop()) {
+				$('nav').addClass('black');
+			}
+			else {
+				$('nav').removeClass('black');
+			}
+		})
+
+		</script>
+
 </body>
 </html>
